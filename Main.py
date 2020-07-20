@@ -7,6 +7,7 @@ import numpy as np
 import random
 import sys
 
+
 class main:
     def __init__(self):
         folders = ["squares", "grids", "Finished Boards"]
@@ -25,7 +26,7 @@ class main:
         # Magic Numbers
         self.TEXTWIDTH = int(cfgParse['config']['TextWidth'])
         self.FONTSIZE = int(cfgParse['config']['FontSize'])
-        self.STARTINGHEIGHT = int(cfgParse['config']['StartingHeight'])
+        self.TEXTPADDING = int(cfgParse['config']['TextPadding'])
         self.BORDERSIZE = int(cfgParse['config']['BorderSize'])
         self.TEXTCOLOR = cfgParse['config']['TextColor']
         self.BORDERCOLOR = cfgParse['config']['BorderColor']
@@ -59,11 +60,17 @@ class main:
             draw = ImageDraw.Draw(im)
             font = ImageFont.truetype(self.TEXTFONT, self.FONTSIZE)
 
-            current_h, pad = self.STARTINGHEIGHT, 10
+            textHeight = 0
+            for line in text:
+                w, h = draw.textsize(line, font=font)
+                textHeight += (h + self.TEXTPADDING)
+
+            current_h = (MAX_H - textHeight) / 2
+
             for line in text:
                 w, h = draw.textsize(line, font=font)
                 draw.text(((MAX_W - w) / 2, current_h), line, 'black', font=font)
-                current_h += h + pad
+                current_h += h + self.TEXTPADDING
 
             imgBorder = ImageOps.expand(im, border=self.BORDERSIZE, fill='black')
             imgBorder.save(out_img)

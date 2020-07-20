@@ -17,8 +17,8 @@ TextWidth=16
 # Size of the font in each individual square
 FontSize=21
 
-# How many pixels from the top the text starts
-StartingHeight=30
+# Pixels between each line of text
+TextPadding=10
 
 # Border width in pixels
 BorderSize=2
