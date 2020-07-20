@@ -1,0 +1,36 @@
+[options]
+# Separate all options by a pipe ( | ). Spaces before and after a pipe will be ignored.
+options=Grant forgets NPC's name/ voice|Grant forgets important story element|Grant rewards inspiration|Grant sets up a stupid joke/ pun|Lionel deflects a projectile|Lionel transforms his weapon|Lionel wastes several Ki points|Whirse uses Levitate|Whirse Wild Surges|Whirse uses metamagic|Whirse is socially awkward/ stupid|Lessora gets drunk|Lessora uses a healing spell|Lessora casts Bless|Qhardanox's true form comes into play|Sabbath uses fire breath|Sababth scares NPC|Party does something morally questionable|Party restrains, captures, or imprisons someone|Party falls for obvious trick/ trap|Party gets split|Party member never attacks during a combat encounter|Party member does something stupid that ends up working|Party member finds/ buys a new magical, wearable item|Party member finds/ buys a new potion|Party member finds/ buys a new weapon|Party member gets scammed|Party member runs out of HP|Party member tries to do something cool but fails miserably|Party pools their gold together to buy something|Party takes a short rest|Party spends 15+ minutes planning mid-session|Party immediately hates new NPC|Party immediately loves new NPC|Party's plan gets put on hold for something stupid|Someone goes AFK without saying anything|Someone hides something from the rest of the party|Laughing fit|Mechanic is Googled|Inspiration die is used|Single-use item is used|Coordinated attack/ maneuver in combat|nat1 in combat|nat20 in combat|nat1 skill check|nat20 skill check|Amazing random encounter|Terrible random encounter|Magic is used for something mundane and stupid|Plan heavily relies on teleportation magic|Black powder is used|Session ends on a cliffhanger|Accidental friendly fire|Encounter an NPC we haven't seen for several sessions|Cameo or reference from another campaign|Cute, non-humanoid creature|Exotic humanoid race|NPC or item is based off something|New addition to Moontown|Other language comes into play|Enemy escapes|Technical difficulties|Weather|Dragon|Brain eaten|Undead|Puzzle|Time Travel Glitch
+
+[config]
+# NOTE - Your background MUST be bigger than 1020x1020, as this is the size of the grids that are created.
+
+# How many random boards should be created?
+BoardsToMake=5
+
+# Free Space Text
+FreeSpace=Free Space
+
+# Width of text in each individual square
+TextWidth=16
+
+# Size of the font in each individual square
+FontSize=21
+
+# How many pixels from the top the text starts
+StartingHeight=30
+
+# Border width in pixels
+BorderSize=2
+
+# Text color, all common color names work fine.
+TextColor=black
+
+# Border color, all common color names work fine.
+BorderColor=black
+
+# Text font, must end with .ttf if a system font
+TextFont=arial.ttf
+
+# Location the bingo grid is pasted onto the background, X, Y from top left corner. Separate by comma.
+PasteLocation=450, 200
