@@ -117,8 +117,8 @@ class main:
 if __name__ == "__main__":
     Main = main()
     print("Generating bingo boards, please wait...")
+    Main.createSquares()
     for board in range(Main.BOARDSTOMAKE):
-        Main.createSquares()
         allImages = Main.randomizeImages()
         Main.createGrid(allImages, board)
         Main.boardOntoBkg(board)
